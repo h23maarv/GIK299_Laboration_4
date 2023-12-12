@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Arvidsson_Mattias_Labration4
 {
-    // En strukt som representerar hårdetaljer med attributen HairLength (hårlängd i centimeter) och HairColor (hårfärg).
-    public struct Gender
+    // Detta är en enum för att representera olika kön.
+    public enum Gender
     {
-        // Attribut för hårlängd i centimeter.
-        public int HairLength;
-        // Attribut för hårfärg.
-        public string HairColor;
+        Man,        // Representerar manligt kön.
+        Woman,      // Representerar kvinnligt kön.
+        Nonbinary,  // Representerar icke-binärt kön.
+        Other       // Representerar andra kön som inte täcks av de tidigare alternativen.
     }
 }

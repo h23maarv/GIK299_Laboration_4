@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj": {}
+    "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj": {
+    "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj",
+        "projectUniqueName": "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj",
         "projectName": "Arvidsson_Mattias_Labration4",
-        "projectPath": "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj",
+        "projectPath": "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4.csproj",
         "packagesPath": "C:\\Users\\Mattr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\Arvidsson_Mattias_Labration4\\obj\\",
+        "outputPath": "C:\\Users\\Mattr\\Documents\\GIK299\\Objektorienterad programmering\\Github\\Laboration4\\Arvidsson_Mattias_Labration4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mattr\\AppData\\Roaming\\NuGet\\NuGet.Config",

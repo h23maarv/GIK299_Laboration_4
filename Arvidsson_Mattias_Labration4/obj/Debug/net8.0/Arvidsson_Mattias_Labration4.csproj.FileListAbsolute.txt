@@ -1,0 +1,15 @@
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\bin\Debug\net8.0\Arvidsson_Mattias_Labration4.exe
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\bin\Debug\net8.0\Arvidsson_Mattias_Labration4.deps.json
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\bin\Debug\net8.0\Arvidsson_Mattias_Labration4.runtimeconfig.json
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\bin\Debug\net8.0\Arvidsson_Mattias_Labration4.dll
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\bin\Debug\net8.0\Arvidsson_Mattias_Labration4.pdb
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.AssemblyInfoInputs.cache
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.AssemblyInfo.cs
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.csproj.CoreCompileInputs.cache
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.sourcelink.json
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.dll
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\refint\Arvidsson_Mattias_Labration4.dll
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.pdb
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\Arvidsson_Mattias_Labration4.genruntimeconfig.cache
+C:\Users\Mattr\Documents\GIK299\Objektorienterad programmering\Github\Laboration4\Arvidsson_Mattias_Labration4\obj\Debug\net8.0\ref\Arvidsson_Mattias_Labration4.dll
