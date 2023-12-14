@@ -32,7 +32,7 @@ namespace Arvidsson_Mattias_Labration4
                         break;
 
                     case 2:
-                        ListPersons(Personlist);
+                        ListPerson(Personlist);
                         break;
 
                     case 3:
@@ -40,40 +40,101 @@ namespace Arvidsson_Mattias_Labration4
                         break;
 
                     default:
-                        Console.WriteLine("Invalid selection. Try again.");
+                        Console.WriteLine("Invalid selection. Try again. ");
                         break;
                 }
-
             }
         }
-
         static void AddPerson(List<Person> personsList)
         {
             bool validInput = false;
+
             while (!validInput)
             {
                 try
                 {
                     Console.WriteLine("\nEnter information about the person: ");
 
-                    Console.WriteLine("Gender (0: Male, 1: Female, 2: Non-binary, 3: Other): ");
-                    Gender gender = (Gender)Enum.Parse(typeof(Gender), Console.ReadLine());
+                    Gender gender;
+                    while (true)
+                    {
+                        Console.WriteLine("Gender (0: Male, 1: Female, 2: Non-binary, 3: Other): ");
+                        if (Enum.TryParse(Console.ReadLine(), out gender) && Enum.IsDefined(typeof(Gender), gender))
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
 
-                    Console.WriteLine("Hair length in cm: ");
-                    int hairLength = Convert.ToInt32(Console.ReadLine());
+                    int hairLength;
+                    while (true)
+                    {
+                        Console.WriteLine("Hair length: ");
+                        if (int.TryParse(Console.ReadLine(), out hairLength) && hairLength >= 0)
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
 
-                    Console.WriteLine("Hair color: ");
-                    string hairColor = Console.ReadLine();
+                    string hairColor;
+                    while (true)
+                    {
+                        Console.WriteLine("Hair color: ");
+                        hairColor = Console.ReadLine();
+                        if (!string.IsNullOrWhiteSpace(hairColor))
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
 
-                    Hair hair = new Hair { HairLength = hairLength, HairColor = hairColor };
+                    int birthYear;
+                    while (true)
+                    {
+                        Console.WriteLine("Birthyear (YYYY): ");
+                        if (int.TryParse(Console.ReadLine(), out birthYear) && birthYear > 2023 && birthYear < 1900)
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
 
-                    Console.WriteLine("Birthday (ÅÅÅÅ-MM-DD): ");
-                    DateTime birthday = DateTime.Parse(Console.ReadLine());
+                    int birthMonth;
+                    while (true)
+                    {
+                        Console.WriteLine("Birthmonth (MM): ");
+                        if (int.TryParse(Console.ReadLine(), out birthMonth) && birthMonth > 12 && birthMonth < 1)
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
 
-                    Console.WriteLine("Eye color: ");
-                    string eyeColor = Console.ReadLine();
+                    int birthDay;
+                    while (true)
+                    {
+                        Console.WriteLine("Birthday (DD): ");
+                        if (int.TryParse(Console.ReadLine(), out birthDay) && birthDay > 31 && birthDay < 1)
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
 
-                    Person newPerson = new Person(gender, hair, birthday, eyeColor);
+                    string eyeColor;
+                    while (true)
+                    {
+                        Console.WriteLine("Eye color: ");
+                        eyeColor = Console.ReadLine();
+                        if (!string.IsNullOrWhiteSpace(eyeColor))
+                        {
+                            break;
+                        }
+                        Console.WriteLine("Invalid input. Please try again. ");
+                    }
+
+                    Person newPerson = new Person(gender, hairLength, hairColor, birthYear, birthMonth, birthDay, eyeColor);
                     personsList.Add(newPerson);
 
                     Console.WriteLine("Person added!");
@@ -90,13 +151,13 @@ namespace Arvidsson_Mattias_Labration4
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Something went wrong. Please try again.");
+                    Console.WriteLine("Something went wrong. Please try again. ");
                 }
             }
         }
-        static void ListPersons(List<Person> personsList)
+        static void ListPerson(List<Person> personsList)
         {
-            Console.WriteLine("\nList of people:");
+            Console.WriteLine("\nList of people: ");
 
             foreach (var person in personsList)
             {
