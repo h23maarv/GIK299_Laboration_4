@@ -11,17 +11,17 @@ namespace Arvidsson_Mattias_Labration4
 {
     // Attribut för personens kön med en privat set-metod för att säkerställa inkapsling.
     public Gender Gender { get; private set; }
-    // Attribut för personens hårdetaljer med en privat set-metod för att säkerställa inkapsling.
+    // Attribut för personens hårlängd med en privat set-metod för att säkerställa inkapsling.
     public int HairLength { get; private set; }
-    // Attribut för personens födelsedatum med en privat set-metod för att säkerställa inkapsling.
+    // Attribut för personens hårfärg med en privat set-metod för att säkerställa inkapsling.
     public string HairColor { get; private set; }
-    // Attribut för personens födelsedatum med en privat set-metod för att säkerställa inkapsling.
+    // Attribut för personens födelseår med en privat set-metod för att säkerställa inkapsling.
     public int BirthYear { get; private set; }
-    // Attribut för personens ögonfärg med en öppen set-metod för att säkerställa inkapsling.
+    // Attribut för personens födelsemånad med en privat set-metod för att säkerställa inkapsling.
     public int BirthMonth { get; private set; }
-    // Attribut för personens ögonfärg med en öppen set-metod för att säkerställa inkapsling.
+    // Attribut för personens födelseday med en privat set-metod för att säkerställa inkapsling.
     public int BirthDay { get; private set; }
-    // Attribut för personens ögonfärg med en öppen set-metod för att säkerställa inkapsling.
+    // Attribut för personens ögonfärg med en privat set-metod för att säkerställa inkapsling.
     public string? EyeColor { get; private set; }
 
     // Konstruktor som används för att skapa en instans av Person med specificerade attribut.

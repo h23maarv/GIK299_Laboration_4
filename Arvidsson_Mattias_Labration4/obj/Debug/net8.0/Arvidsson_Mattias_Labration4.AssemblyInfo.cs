@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arvidsson_Mattias_Labration4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b25e696a2a3db1ce631f249212bb13764c2f7a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd18c7f18b0b53e3de517182c16bfadfe0cf9e50")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arvidsson_Mattias_Labration4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arvidsson_Mattias_Labration4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

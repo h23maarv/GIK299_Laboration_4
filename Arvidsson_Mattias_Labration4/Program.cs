@@ -12,19 +12,19 @@ namespace Arvidsson_Mattias_Labration4
             List<Person> Personlist = new List<Person>();
 
             // Flagga för att kontrollera när programmet ska avslutas
-            bool shouldExit = false;
+            bool menu = false;
 
             // Huvudloop för programmet
-            while (!shouldExit)
+            while (!menu)
             {
                 // Huvudmenyn
                 Console.WriteLine(
-                    "\n------------------------------------------------" +
+                    "\n------------------------------" +
                     "\nChoose one of the options: " +
                     "\n1.) Add person " +
-                    "\n2.) Print out list of people " +
+                    "\n2.) Print out list of added people " +
                     "\n3.) Exit the program. " +
-                    "\n------------------------------------------------"
+                    "\n------------------------------"
                     );
                 // Läs användarens val
                 Console.Write("Enter your choice: ");
@@ -45,7 +45,7 @@ namespace Arvidsson_Mattias_Labration4
 
                     // Sätt flaggan för att avsluta programmet
                     case 3:
-                        shouldExit = true;
+                        menu = true;
                         break;
 
                     default:
@@ -78,88 +78,88 @@ namespace Arvidsson_Mattias_Labration4
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. Choose between 0 and 3. Please try again. ");
+                        Console.WriteLine("\nInvalid input. Choose between 0 and 3. Please try again. ");
                     }
 
                     int hairLength;
                     while (true)
                     {
                         // Läs in och validera hårlängd
-                        Console.WriteLine("Hair length: ");
+                        Console.WriteLine("\nHair length: ");
                         if (int.TryParse(Console.ReadLine(), out hairLength) && hairLength >= 0)
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. It needs to be a number. Please try again. ");
+                        Console.WriteLine("\nInvalid input. It needs to be a number. Please try again. ");
                     }
 
                     string hairColor;
                     while (true)
                     {
                         // Läs in och validera hårfärg
-                        Console.WriteLine("Hair color: ");
+                        Console.WriteLine("\nHair color: ");
                         hairColor = Console.ReadLine() ?? "";
                         if (!string.IsNullOrWhiteSpace(hairColor) && !hairColor.Any(char.IsDigit))
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. It needs to be a color. Please try again. ");
+                        Console.WriteLine("\nInvalid input. It needs to be a color. Please try again. ");
                     }
 
                     int birthYear;
                     while (true)
                     {
                         // Läs in och validera födelseår
-                        Console.WriteLine("Birthyear (YYYY): ");
+                        Console.WriteLine("\nBirthyear (YYYY): ");
                         if (int.TryParse(Console.ReadLine(), out birthYear) && birthYear > 1899 && birthYear < 2024 )
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. Valid years are 1900-2023. Please try again. ");
+                        Console.WriteLine("\nInvalid input. Valid years are 1900-2023. Please try again. ");
                     }
 
                     int birthMonth;
                     while (true)
                     {
                         // Läs in och validera födelsemånad
-                        Console.WriteLine("Birthmonth (MM): ");
+                        Console.WriteLine("\nBirthmonth (MM): ");
                         if (int.TryParse(Console.ReadLine(), out birthMonth) && birthMonth > 0 && birthMonth < 13 )
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. Valid month are 1-12. Please try again. ");
+                        Console.WriteLine("\nInvalid input. Valid month are 1-12. Please try again. ");
                     }
 
                     int birthDay;
                     while (true)
                     {
                         // Läs in och validera födelsedag
-                        Console.WriteLine("Birthday (DD): ");
+                        Console.WriteLine("\nBirthday (DD): ");
                         if (int.TryParse(Console.ReadLine(), out birthDay) && birthDay > 0 && birthDay < 32 )
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. Valid days are 1-31. Please try again. ");
+                        Console.WriteLine("\nInvalid input. Valid days are 1-31. Please try again. ");
                     }
 
                     string eyeColor;
                     while (true)
                     {
                         // Läs in och validera ögonfärg
-                        Console.WriteLine("Eye color: ");
+                        Console.WriteLine("\nEye color: ");
                         eyeColor = Console.ReadLine() ?? "";
                         if (!string.IsNullOrWhiteSpace(eyeColor) && !eyeColor.Any(char.IsDigit))
                         {
                             break;
                         }
-                        Console.WriteLine("Invalid input. It needs to be a color. Please try again. ");
+                        Console.WriteLine("\nInvalid input. It needs to be a color. Please try again. ");
                     }
 
                     // Skapa en ny person och lägg till i listan
                     Person newPerson = new Person(gender, hairLength, hairColor, birthYear, birthMonth, birthDay, eyeColor);
                     personsList.Add(newPerson);
 
-                    Console.WriteLine("Person added!");
+                    Console.WriteLine("\nPerson added!");
 
                     // Markera korrekt inmatning och avsluta loopen
                     validInput = true;
@@ -167,15 +167,15 @@ namespace Arvidsson_Mattias_Labration4
                 // Hantera olika typer av fel och ge lämpliga meddelanden
                 catch (FormatException)
                 {
-                    Console.WriteLine("Incorrect format. Please try again. ");
+                    Console.WriteLine("\nIncorrect format. Please try again. ");
                 }
                 catch (ArgumentException)
                 {
-                    Console.WriteLine("Invalid input. Please try again. ");
+                    Console.WriteLine("\nInvalid input. Please try again. ");
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Something went wrong. Please try again. ");
+                    Console.WriteLine("\nSomething went wrong. Please try again. ");
                 }
             }
         }
