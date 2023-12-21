@@ -8,10 +8,10 @@ namespace Arvidsson_Mattias_Labration4
     {
         public static void Main(string[] args)
         {
-            // Skapa en lista för att lagra personer
+            // Skapar en lista för att lagra personer
             List<Person> Personlist = new List<Person>();
 
-            // Flagga för att kontrollera när programmet ska avslutas
+            // Flaggar för att kontrollera när programmet ska avslutas
             bool menu = false;
 
             // Huvudloop för programmet
@@ -26,24 +26,24 @@ namespace Arvidsson_Mattias_Labration4
                     "\n3.) Exit the program. " +
                     "\n------------------------------"
                     );
-                // Läs användarens val
+                // Läsr användarens val
                 Console.Write("Enter your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
-                // Hantera användarens val med en switch-sats
+                // Hanterar användarens val med en switch-sats
                 switch (choice)
                 {
-                    // Anropa metoden för att lägga till en person
+                    // Anropar metoden för att lägga till en person
                     case 1:
                         AddPerson(Personlist);
                         break;
 
-                    // Anropa metoden för att lista personer
+                    // Anropar metoden för att lista personer
                     case 2:
                         ListPerson(Personlist);
                         break;
 
-                    // Sätt flaggan för att avsluta programmet
+                    // Sätter flaggan för att avsluta programmet
                     case 3:
                         menu = true;
                         break;
@@ -57,7 +57,7 @@ namespace Arvidsson_Mattias_Labration4
         // Metod för att lägga till en person i listan
         static void AddPerson(List<Person> personsList)
         {
-            // Flagga för att kontrollera korrekt inmatning
+            // Flaggar för att kontrollera korrekt inmatning
             bool validInput = false;
 
             // Loop för att hantera felaktig inmatning och lägga till en person
@@ -65,13 +65,13 @@ namespace Arvidsson_Mattias_Labration4
             {
                 try
                 {
-                    // Läs in information om personen
+                    // Läser in information om personen
                     Console.WriteLine("\nEnter information about the person: ");
 
                     Gender gender;
                     while (true)
                     {
-                        // Hantera inmatning för kön
+                        // Hanterar inmatning för kön
                         Console.WriteLine("Gender (0: Male, 1: Female, 2: Non-binary, 3: Other): ");
                         Console.Write("Enter your choice: ");
                         if (Enum.TryParse(Console.ReadLine(), out gender) && Enum.IsDefined(typeof(Gender), gender))
@@ -84,7 +84,7 @@ namespace Arvidsson_Mattias_Labration4
                     int hairLength;
                     while (true)
                     {
-                        // Läs in och validera hårlängd
+                        // Läser in och validera hårlängd
                         Console.WriteLine("\nHair length: ");
                         if (int.TryParse(Console.ReadLine(), out hairLength) && hairLength >= 0)
                         {
@@ -96,7 +96,7 @@ namespace Arvidsson_Mattias_Labration4
                     string hairColor;
                     while (true)
                     {
-                        // Läs in och validera hårfärg
+                        // Läser in och validera hårfärg
                         Console.WriteLine("\nHair color: ");
                         hairColor = Console.ReadLine() ?? "";
                         if (!string.IsNullOrWhiteSpace(hairColor) && !hairColor.Any(char.IsDigit))
@@ -109,7 +109,7 @@ namespace Arvidsson_Mattias_Labration4
                     int birthYear;
                     while (true)
                     {
-                        // Läs in och validera födelseår
+                        // Läser in och validera födelseår
                         Console.WriteLine("\nBirthyear (YYYY): ");
                         if (int.TryParse(Console.ReadLine(), out birthYear) && birthYear > 1899 && birthYear < 2024 )
                         {
@@ -121,7 +121,7 @@ namespace Arvidsson_Mattias_Labration4
                     int birthMonth;
                     while (true)
                     {
-                        // Läs in och validera födelsemånad
+                        // Läser in och validera födelsemånad
                         Console.WriteLine("\nBirthmonth (MM): ");
                         if (int.TryParse(Console.ReadLine(), out birthMonth) && birthMonth > 0 && birthMonth < 13 )
                         {
@@ -133,7 +133,7 @@ namespace Arvidsson_Mattias_Labration4
                     int birthDay;
                     while (true)
                     {
-                        // Läs in och validera födelsedag
+                        // Läser in och validera födelsedag
                         Console.WriteLine("\nBirthday (DD): ");
                         if (int.TryParse(Console.ReadLine(), out birthDay) && birthDay > 0 && birthDay < 32 )
                         {
@@ -145,7 +145,7 @@ namespace Arvidsson_Mattias_Labration4
                     string eyeColor;
                     while (true)
                     {
-                        // Läs in och validera ögonfärg
+                        // Läser in och validera ögonfärg
                         Console.WriteLine("\nEye color: ");
                         eyeColor = Console.ReadLine() ?? "";
                         if (!string.IsNullOrWhiteSpace(eyeColor) && !eyeColor.Any(char.IsDigit))
@@ -155,16 +155,16 @@ namespace Arvidsson_Mattias_Labration4
                         Console.WriteLine("\nInvalid input. It needs to be a color. Please try again. ");
                     }
 
-                    // Skapa en ny person och lägg till i listan
+                    // Skapar en ny person och lägg till i listan
                     Person newPerson = new Person(gender, hairLength, hairColor, birthYear, birthMonth, birthDay, eyeColor);
                     personsList.Add(newPerson);
 
                     Console.WriteLine("\nPerson added!");
 
-                    // Markera korrekt inmatning och avsluta loopen
+                    // Markerar korrekt inmatning och avsluta loopen
                     validInput = true;
                 }
-                // Hantera olika typer av fel och ge lämpliga meddelanden
+                // Hanterar olika typer av fel och ge lämpliga meddelanden
                 catch (FormatException)
                 {
                     Console.WriteLine("\nIncorrect format. Please try again. ");
@@ -182,9 +182,9 @@ namespace Arvidsson_Mattias_Labration4
         // Metod för att skriva ut en lista av personer till konsolen
         static void ListPerson(List<Person> personsList)
         {
-            Console.WriteLine("\nList of people: ");
+            Console.WriteLine("\nList of people: \n");
 
-            // Loopa igenom varje person i listan och skriv ut deras information
+            // Loopar igenom varje person i listan och skriv ut deras information
             foreach (var person in personsList)
             {
                 Console.WriteLine(person + "\n");
